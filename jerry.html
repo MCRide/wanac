@@ -15,22 +15,42 @@ function myFunction() {
   }
 }
 </script>
-  <style>
+<style>
 p {
   margin: 35px;
   font-family: verdana;
-  color: white;
+  color: black;
+  text-align: center;
 }
 h1 {
+  text-align: center;
   font-family: verdana;
-  color: white;
+  color: black;
 }
 h2 {
   font-family: verdana;
-  color: white;
+  color: black;
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 body {
-  background-image: url("https://wallpapercave.com/wp/4c2yxuH.gif");
+  background-color: white;
+  background-image: url("https://i.imgur.com/SvnuN4M.png");
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -93,13 +113,28 @@ body {
   </a>
 </div>
 
-
 <!-- End of Navigation bar code -->
 <div style="padding-left:16px">
   <h2>Jerry - Project Manager</h2>
 <p>
 I am a year 10 student at Lyneham High School who is studying Web Design, hence the making of this website. 
 </p>
+ <br>
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fparmyolson%2Ffiles%2F2014%2F09%2F0929_jerry-yang_1024x576.jpg" class="center" border="10" alt="jerry-yang">
+ <br>
+ <br>
+<h2> Here is some of my previous work </h2>
 <br>
+<div class="row">
+  <div class="column">
+    <img src="https://framework.dreamscape.cloud/design_framework/images/crazy/web_design/slide1.jpg" alt="website-1" >
+  </div>
+  <div class="column">
+    <img src="https://www.bigcommerce.com/blog/wp-content/uploads/2018/06/ecommerce-design-awards-renogy-750x632.jpg" alt="website-2">
+  </div>
+  <div class="column">
+    <img src="https://cdn.athemes.com/wp-content/uploads/avada-wordpress-theme.jpg" alt="website-3" >
+  </div>
+</div>
 </body>
 </html>
