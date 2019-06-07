@@ -38,15 +38,15 @@ h2 {
   margin-right: auto;
   width: 50%;
 }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.row {
+  text-align: center;
+  image-align: center;
+  display: flex;
 }
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 body {
   background-color: white;
@@ -127,13 +127,13 @@ I am a year 10 student at Lyneham High School who is studying Web Design, hence 
 <br>
 <div class="row">
   <div class="column">
-    <img src="https://framework.dreamscape.cloud/design_framework/images/crazy/web_design/slide1.jpg" alt="website-1" >
+    <img src="https://framework.dreamscape.cloud/design_framework/images/crazy/web_design/slide1.jpg" alt="website-1" height="300px" width="400px" border="5">
   </div>
   <div class="column">
-    <img src="https://www.bigcommerce.com/blog/wp-content/uploads/2018/06/ecommerce-design-awards-renogy-750x632.jpg" alt="website-2">
+    <img src="https://www.bigcommerce.com/blog/wp-content/uploads/2018/06/ecommerce-design-awards-renogy-750x632.jpg" alt="website-2" height="=300px" width="400px" border="5">
   </div>
   <div class="column">
-    <img src="https://cdn.athemes.com/wp-content/uploads/avada-wordpress-theme.jpg" alt="website-3" >
+    <img src="https://cdn.athemes.com/wp-content/uploads/avada-wordpress-theme.jpg" alt="website-3" height="300px" width="400px" border="5">
   </div>
 </div>
 </body>
